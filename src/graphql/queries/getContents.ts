@@ -14,8 +14,8 @@ const GET_CONTENTS = gql`
       url,
       thumbnail,
       dates {
-        posted 
-      },
+        posted(format: "2 $$January$$ 2006")
+      }
     }
   }
 `;

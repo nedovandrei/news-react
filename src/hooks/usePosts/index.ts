@@ -32,7 +32,7 @@ const usePosts = () => {
       }
     })
   }, [fetchMore, posts])
-
+  console.log(posts)
   return { fetchMorePosts, loading, posts }
 }
 

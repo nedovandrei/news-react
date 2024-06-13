@@ -21,13 +21,14 @@ const PostsLayout = () => {
           <p>loading</p>
         ) : (
           <List>
-            {posts.map((data: { id: string; url: string; title: { short: string }; thumbnail: string; description: object }, index: number) => (
+            {posts.map((data: { id: string; dates:string; url: string; title: { short: string }; thumbnail: string; description: object }, index: number) => (
               <Post
                 id={data.id}
                 key={data.id}
                 ref={
                   index === posts.length - 1 ? thresholdElementRef : undefined
                 }
+                dates={data.dates}
                 url={data.url}
                 title={data.title.short}
                 thumbnail={data.thumbnail}

@@ -48,3 +48,10 @@ export const Intro = styled.p`
   margin: 0px 0px 10px;
   color: rgb(15, 23, 42);
 `
+
+export const Date = styled.p`
+font-size: 14px;
+    color: rgb(128, 128, 128);
+    line-height: 0;
+    width: max-content;
+`

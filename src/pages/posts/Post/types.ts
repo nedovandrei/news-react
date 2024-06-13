@@ -7,4 +7,5 @@ export type PostProps = Omit<HTMLAttributes<HTMLDivElement>, 'id' | 'title' | 't
   url: string
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   description: any
+  dates: string
 }
